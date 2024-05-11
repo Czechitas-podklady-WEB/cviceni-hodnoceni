@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './style.css';
 
-export const Star = ( {value, onSelect} ) => {
-  const [glowing, setGlowing] = useState(false);
+export const Star = ( {value, glowing, onSelect} ) => {  
+  // const [glowing, setGlowing] = useState(false);
   
   const handleClick = () => {
-    setGlowing(true)
+    // setGlowing(true)
     onSelect(value)
   }
 
